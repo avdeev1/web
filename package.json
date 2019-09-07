@@ -1,0 +1,34 @@
+{
+  "name": "myporject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha *test.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser": "^0.2.6",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-dom": "^1.8.1",
+    "chai-webdriver": "^1.2.0",
+    "chromedriver": "^2.45.0",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.1.0",
+    "mocha": "^5.2.0",
+    "mocha-css": "^1.0.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.7",
+    "selenium-webdriver": "^4.0.0-alpha.1",
+    "should": "^13.2.3",
+    "window": "^4.2.5"
+  },
+  "devDependencies": {
+    "jasmine": "^3.3.1",
+    "supertest": "^3.3.0"
+  }
+}

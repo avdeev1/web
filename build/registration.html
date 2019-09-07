@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/login_page_styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        
+        <title>Регистрация</title>
+    </head>
+    <body class="text-center">
+        <header class="page-header">
+               <nav class="nav">
+                  <img class="gerb" src="/images/spbu.png" alt="">
+                   <ul class="topmenu">
+                       <li><a class="main-page" href="">Главная<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Новости</a></li>
+                               <li><a href="">О центре</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="projects" href="/">Проекты<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Будущие проекты</a></li>
+                               <li><a href="">Текущие проекты</a></li>
+                               <li><a href="">Архив</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="contacts" href="">Контакты</a></li>
+
+                   </ul>
+                   <div class="registration-div">
+                       <div><a href="/login">Войти</a></div>
+                       <div><a href="/registration">Зарегистрироваться</a></div>
+                   </div>
+               </nav>
+           </header>
+           <main>
+
+           <script type="text/javascript"> (function (d, w, c) { (w[c] =     w[c] || []).push(function() { try { w.yaCounter39705265 = new Ya.Metrika({ id:39705265, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39705265" style="position:absolute; left:-9999px;" alt="Yandex.Metrika" /></div></noscript>
+              
+               <form class="form-signin" method="post" action="/registrationuser">
+                  <img class="mb-4" src="/images/spbu.png" alt="" width="100" height="auto">
+                  <h1 class="h3 mb-3 font-weight-normal">Please fill in all required fields</h1>
+                  <label for="inputName" class="sr-only" >Name</label>
+                  <input type="name" id="inputName" name="name" class="form-control" pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Name" required autofocus>
+                  <label for="LastName" class="sr-only" >Last Name</label>
+                  <input type="name" id="inputLastName" name="lastname" class="form-control" pattern="^[а-яА-ЯёЁa-zA-Z]+$" placeholder="Last Name" required autofocus>
+
+                <div style="background-color: white; padding: 10px 0; margin: 10px 0px">Пароль должен содержать минимум 8 симвлово, включая как минимум 1 цифру и одну заглавную букву и максимум 24 символа</div>
+                  <label for="inputEmail" class="sr-only" >Email address</label>
+                  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputPassword" class="sr-only">Password</label>
+                  <input type="password" id="password" class="form-control" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8, 24}" required  name="password">
+                  <label for="password" class="sr-only">Repeat please</label>
+                  <input type="password" ud="password" id="inputPassword" class="form-control" 
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,24}"placeholder="Repeat password" required  name="secondpassword">
+                  <br>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit" id="login_btn">Registration</button>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+              </form>
+    
+           
+        </main>
+        
+        <script src="/scripts/registration_script.js"></script>
+</body>
+</html>

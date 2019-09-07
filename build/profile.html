@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/profile_style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        
+        <title>Профиль</title>
+    </head>
+    <body class="text-center">
+        <header class="page-header">
+               <nav class="nav">
+                  <img class="gerb" src="/images/spbu.png" alt="">
+                   <ul class="topmenu">
+                       <li><a class="main-page" href="">Главная<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Новости</a></li>
+                               <li><a href="">О центре</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="projects" href="/">Проекты<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Будущие проекты</a></li>
+                               <li><a href="">Текущие проекты</a></li>
+                               <li><a href="">Архив</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="contacts" href="">Контакты</a></li>
+                   </ul>
+                   
+                   <div class="profile-div">
+                       <div><a id="profile">Личный профиль</a></div>
+                       <div><a href="/logout">Выйти</a></div>
+                   </div>
+               </nav>
+           </header>
+        <main>
+           
+            <div class="profile-box-div">
+              <h2 class="profile-title">Профиль</h2>
+              <div class="img-div">
+                    <img src="/images/hello.png" width="150px" height="auto" alt="">
+                </div>
+               <div class="info-div">
+                    <div id="iname">
+                        Name
+                    </div>
+                    <div id="ilname">
+                        Last name
+                    </div>
+                    <div id="iemail">
+                        email
+                    </div>
+                    <div id="ifac">
+                        fac
+                    </div>
+                    <div id="icourse">
+                        course
+                    </div>
+                    <div id="iabout">
+                        about
+                    </div>
+                    <div id="iproject">
+                    </div>
+                </div>
+                
+                
+            </div>
+               
+                
+                <div class="edit">
+                   <button id="editInfo">Изменить данные</button>
+                    <form action="/infoedit" class="edit-info" method="post">
+                      <input type="text" id="userId" name="userId">
+                       <label for="name">Name 
+                            <input type="text" name="name" class="name" placeholder="Имя" required>
+                        </label>
+                        
+                        <label for="lname">Last name
+                            <input type="text" name="lname" class="lname" placeholder="Last name" required>
+                        </label> 
+                        
+                        <label for="fac">Faculty
+                            <input type="text" name="fac" class="fac" placeholder="Faculty" required>
+                        </label>
+                        
+                        <label for="course">Course
+                            <input type="text" name="course" class="course" pattern="[1-6]" placeholder="1...6" required>
+                        </label>
+                        
+                        
+                        <label for="about">About
+                            <textarea name="about" class="about" cols="30" rows="5" placeholder="About" maxlength="500" required></textarea>
+                        </label>
+                        <input type="submit" class="save-btn" value="Save">
+                    </form>
+                </div>
+                 
+        </main>
+        <footer class="page-footer">
+                <div class="contacts">
+                    Санкт-Петербургский Государственный Университет<br>
+                    Факультет прикладной математики - процессов управления<br>
+                    2018
+                </div>
+            </footer>
+        
+        <script src="/scripts/profile_script.js"></script>
+</body>
+</html>

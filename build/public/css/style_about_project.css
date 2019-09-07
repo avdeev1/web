@@ -1,0 +1,536 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+.body-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+footer {
+    display: table-row;
+    height: 1px;
+}
+
+.page-header {
+    position: relative;
+    z-index: 5;
+    
+    min-height: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+nav {
+    height: auto;
+    top: 0px;
+    left: 0px;
+    background-color: #f8f9fa;
+    position: fixed; 
+    z-index: 5; 
+    width: 100%; 
+}
+
+.topmenu {
+    width: 50%;
+    margin-left: 100px;
+    float: left;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+
+.profile-div {
+    display: none;
+}
+
+.registration-div, .profile-div {
+    margin-right: 20px;
+    float: right;
+    height: 75px;
+}
+
+.registration-div div, .profile-div div{
+    padding-top: 10px;
+    font-size: 15px;
+    display: inline-block;
+    
+}
+
+.registration-div a, .profile-div a {
+    color: black;
+    cursor: pointer;
+}
+
+.chart1.ct-chart .ct-series.ct-series-a .ct-line {
+    stroke: #4DB543;
+    animation: dashoffset-seven 200ms infinite linear;
+}
+
+.chart1.ct-chart .ct-series.ct-series-a .ct-point{
+    stroke: #B22819;
+}
+ 
+/*Цвет, толщина и стиль второй линии*/
+.chart1.ct-chart .ct-series.ct-series-b .ct-line {
+    stroke: #F04D3A;
+    animation: dashoffset 200ms infinite linear;
+}
+ 
+/*Цвет точек второй линии*/
+.chart1.ct-chart .ct-series.ct-series-b .ct-point{
+    stroke: #0FB500;
+}
+
+.page-header a {
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    outline: none;
+    font-size: 30px;
+    transition: .5s linear;
+}
+
+.fa {
+    font-family: "FontAwesome";
+    color: inherit;
+    padding-left: 10px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.nav ul a {
+    padding: 20px 10px;
+    color: black;
+}
+
+.nav .submenu {
+    text-align: center;
+    display: none;
+}
+.nav ul li:hover .submenu {
+    background-color: #eaeaea;
+    display: block;
+}
+
+.nav li:hover {
+    background-color: #d7d7d7;
+}
+
+.submenu li a {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.submenu li a {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.div-form {
+    float: right;
+    height: 100%;
+}
+
+.find-form {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 25px;
+}
+
+.find {
+    height: 20px;
+    font-size: 20px;
+    width: 250px;
+    border-top: 2px solid #666666;
+}
+
+.find-button{
+    width: 20px;
+}
+
+.gerb {
+    width: 3%;
+    margin-left: 100px;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: auto;
+}
+
+.gray-line {
+    margin-top: 35px;
+    height: 115px;
+    background-color: #6E8894;
+}
+
+
+.project-description {
+    margin-top: 30px;
+    margin-left: 130px;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.project-description .title-of-project {
+    font-weight: bold;
+    text-align: left;
+    font-size: 30px;
+}
+
+.customer-link {
+    margin-top: 20px;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.project-description h2{
+    margin-top: 50px;
+}
+
+.description {
+    padding-bottom: 20px;
+    height: auto;
+    width: 90%;
+    
+}
+
+.graphic {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.github {
+    margin-top: 20px;
+}
+
+.github a {
+    outline: none;
+    text-decoration: none;
+}
+
+.about-project-bar {
+    margin-top: 30px;
+    float: left;
+    margin-left: 80px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.status-project {
+    padding: 20px;
+    padding-left: 30px;
+    border: 1px solid black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.finished {
+    font-size: 25px;
+    font-weight: bold;
+    color: #33d433;
+}
+
+.in-proccess {
+    color: #ffaa33;
+    font-weight: bold;
+}
+
+.in-future {
+    color: #ff3333;
+    font-weight: bold;
+}
+
+
+.hard-level {
+    padding: 20px;
+    padding-left: 30px;
+    border: 1px solid black;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.easy {
+    color: limegreen;
+}
+
+.medium {
+    color: darkgoldenrod;
+}
+
+.hard {
+    color: #ff8585;
+}
+
+.list-of-jobs {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.list-of-jobs a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-of-jobs h2 {
+    padding-left: 30px;
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.list-of-jobs ul {
+    padding-left: 30px;
+    margin-bottom: 40px;
+}
+
+
+.join-to-project {
+    width: 80%;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.valid-button:hover {
+    cursor: pointer;
+    background-color: darksalmon;
+}
+
+.joined-form {
+    display: none;
+}
+
+/*
+.jobs-div-closed {
+    border: 1px solid red
+    margin-top: 20px;
+    display: none;
+}
+*/
+
+#userId {
+    display: none;
+}
+
+#projId {
+    display: none;
+}
+
+.box-of-tags {
+    height: auto;
+    border: 1px solid black;
+}
+
+.box-of-tags .tags li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.box-of-tags .tags li:nth-of-type(2n) {
+    background-color: #ff8585;
+}
+
+.box-of-tags .tags li:nth-of-type(odd) {
+    background-color: darkturquoise;
+}
+
+.box-of-tags span {
+    background-color: #90cfeb;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 5px 10px;
+}
+
+.comments ul li {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.comment {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.create-comment {
+    display: none;
+}
+
+.comments a {
+    width: 50%;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.comments div {
+    width: 50%;
+}
+
+.delete {
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 5px;
+    display: none;
+}
+
+.add-metrics {
+    text-align: center;
+    display: none;
+/*    border: 1px solid red;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 10px;
+}
+
+.add-metrics-div {
+    display: none;
+    border: 1px solid blue;
+}
+
+.add-metric-button {
+    width: 40%;
+    padding: 15px;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.add-metrics-form {
+    text-align: center;
+    padding: 10px;
+}
+
+.add-metrics-form input {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.add-metrics-form .add-metric {
+/*    margin-left: 50px;*/
+    font-size: 35px;
+}
+
+.idform {
+    display: none;
+}
+
+.mes {
+    padding: 10px;
+}
+
+.ip {
+    display: none;
+}
+
+.iu {
+    display: none;
+}
+
+.date-comment {
+    font-size: 15px;
+}
+
+.name-of-comment {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.comment-text {
+    padding: 5px;
+}
+
+.page-footer { 
+    clear: both;
+    margin-top: 30px;
+    min-height: 20px;
+    padding: 5px;
+    font-size: 17px;
+    color: white;
+    background-color: #6E8894;
+}
+
+.page-footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page-footer .title-footer {
+    font-weight: bold; 
+}
+
+.page-footer .info {
+    padding-top: 0px;
+    padding-left: 45px;
+    float: left;
+}
+
+.page-footer .contacts {
+    float: right;
+    text-align: right;
+    line-height: 27px;
+    padding-top: 0px;
+    padding-right: 10px;
+    font-size: 17px;
+}

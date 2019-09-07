@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/login_page_styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        
+        <title>Войти</title>
+    </head>
+    <body class="text-center">
+        <header class="page-header">
+               <nav class="nav">
+                  <img class="gerb" src="/images/spbu.png" alt="">
+                   <ul class="topmenu">
+                       <li><a class="main-page" href="">Главная<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Новости</a></li>
+                               <li><a href="">О центре</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="projects" href="/">Проекты<i class="fa fa-angle-down"></i></a>
+                           <ul class="submenu">
+                               <li><a href="">Будущие проекты</a></li>
+                               <li><a href="">Текущие проекты</a></li>
+                               <li><a href="">Архив</a></li>
+                           </ul>
+                       </li>
+                       <li><a class="contacts" href="">Контакты</a></li>
+
+                   </ul>
+                   <div class="registration-div">
+                       <div><a href="/login">Войти</a></div>
+                       <div><a href="/registration">Зарегистрироваться</a></div>
+                   </div>
+               </nav>
+           </header>
+           <main>
+
+               <form class="form-signin">
+                  <img class="mb-4" src="/images/spbu.png" alt="" width="100" height="auto">
+                  <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+                  <label for="inputEmail" class="sr-only" >Email address</label>
+                  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+                  <label for="inputPassword" class="sr-only">Password</label>
+                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required  name="password">
+                  <br>
+                  <button class="btn btn-lg btn-primary btn-block" type="submit" id="login_btn">Sign in</button>
+                  <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+              </form>
+    
+           
+        </main>
+        
+        <script src="/scripts/login_script.js"></script>
+</body>
+</html>
