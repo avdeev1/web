@@ -1,4 +1,4 @@
-# Saint Petersburg State University's information technology center
+# Saint Petersburg State University's IT center
 
 ## Frontend
 HTML, CSS, JS, jQuery
